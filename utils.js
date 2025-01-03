@@ -7,6 +7,8 @@ const asyncify = async (task, options = {}) => {
     timeout = 0,
   } = options;
 
-  const startTime = Date.now(); // Початковий час
-  let totalIterations = 0; // Лічильник загальних ітерацій
+  const startTime = Date.now();
+  let totalIterations = 0;
+
+  const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 };
