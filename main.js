@@ -5,3 +5,13 @@ const isPrime = (n) => {
   }
   return true;
 };
+
+const primeTask = (() => {
+  let number = 1;
+  return () => {
+    number++;
+    if (isPrime(number)) {
+      console.log(`Простое число найдено: ${number}`);
+    }
+  };
+})();
