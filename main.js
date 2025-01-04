@@ -1,5 +1,6 @@
 import asyncify from "./utils.js";
 
+// Task example: checking numbers for simplicity
 const isPrime = (n) => {
   if (n <= 1) return false;
   for (let i = 2; i <= Math.sqrt(n); i++) {
